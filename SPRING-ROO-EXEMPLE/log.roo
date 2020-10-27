@@ -1,0 +1,31 @@
+// Spring Roo 2.0.0.RELEASE [rev 4a2e9f1] log opened at 2020-10-27 10:35:53
+hint
+project setup --topLevelPackage com.springroo --projectName "rooexemple" --java 8 --packaging JAR
+hint
+jpa setup --provider HIBERNATE --database POSTGRES --databaseName jscaffolder_db --userName simple_ecommerce_solution
+hint
+help
+// Spring Roo 2.0.0.RELEASE [rev 4a2e9f1] log opened at 2020-10-27 10:43:57
+hint
+!g lb
+addon list
+addon search --requiresCommand  database
+addon search --requiresCommand  dbre
+// Spring Roo 2.0.0.RELEASE [rev 4a2e9f1] log opened at 2020-10-27 10:58:55
+addon search --requiresCommand jdbc
+ addon info bundle --bundleSymbolicName org.springframework.roo.wrapping.postgresql-jdbc3
+addon search --requiresCommand postgresql
+hint
+jpa setup --provider HIBERNATE --database POSTGRES --databaseName jscaffolder_db --userName simple_ecommerce_solution
+hint
+// [failed] entity jpa --class ~.domain.TestJscaffolderEntity
+entity jpa --class ~.domain.JscaffolderEntity
+field string --fieldName name 
+field string --fieldName description
+repository jpa --all
+service --all
+web mvc setup 
+web mvc controller --all
+web mvc finder --all 
+// [failed] web mvc view setup --type 
+web mvc view setup --type THYMELEAF 
