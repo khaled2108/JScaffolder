@@ -1,0 +1,4 @@
+entity TestJscaffolderEntity {
+    name String,
+    description String
+}
